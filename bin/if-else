@@ -1,0 +1,33 @@
+void main(){
+    char true = 'T';
+    char false = 'F';
+    char virgul = '_';
+    int sayi = 25;
+    int sart = 15;
+    cout<<sayi++;
+    eif (sayi > 5 && sart == 15){
+        cout<<virgul;cout<<sayi;cout<<virgul;cout<<true;
+    }
+    else{    
+        cout<<virgul;cout<<++sayi;cout<<virgul;cout<<false;
+    }
+    if(sayi > 25 || sart != 15 )
+    {
+        cout<<virgul;cout<<true;sayi = 1000/2 + 5 *10 -150+ 11%2;cout<<virgul;cout<<--sayi;cout<<virgul;
+    }
+    eif( sayi <= 25 )
+    {
+         cout<<virgul;cout<<true; cout<<virgul;sayi = 1000/2 + 5 *10 -150;cout<<sayi++; cout<<virgul;
+    }
+    else 
+        cout<<false;
+    if( sayi >= 25 )
+    {
+        cout<<virgul;
+        cout<<true;
+         cout<<virgul;
+        sayi = 1000%20 +25 -5 +1453 *2 /5;
+        cout<<sayi;
+    }
+
+}

@@ -1,0 +1,18 @@
+void main(){
+    char virgul ;
+    virgul = ',';
+    int i;
+    int n;
+    int t1 = 0; 
+    int t2 = 1;
+    int nextTerm=1;
+    n=20;
+    for (i = 1; i <= n; ++i){
+        cout<<nextTerm;
+        cout<<virgul;
+        nextTerm = t1 + t2;
+        t1 = t2;
+        t2 = nextTerm;
+    }
+    cout<<nextTerm;
+}

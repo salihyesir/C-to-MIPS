@@ -1,0 +1,39 @@
+void main(){
+    int i;
+    int arr[15];
+    char virgul=',';
+    char ayir='_';
+    char sira[5];
+    sira[1] = 's';
+    sira[2] = 'i';
+    sira[3] = 'r';
+    sira[4] = 'a';
+    sira[5] = ':';
+    for(i =0; i<15; i++ ){
+        arr[i]= 1000%(i+1)+100-60+14/7+!(i)+( i | 10) - ( i & 10);
+        eif(arr[i] < 45)
+            arr[i]= arr[i]+ !( i | 10) - !( i & 10) ;
+        else
+            arr[i] = arr[i] + !(i);
+        if(i%3 == 0)
+            arr[i] = arr[i]+i-10+(i<14)-!(i^5);
+        cout<<arr[i];cout<<virgul;
+    }
+    int key;
+    int j; 
+    for (i = 1; i < 15; i++){ 
+        key = arr[i]; 
+        j = i - 1; 
+        while (j >= 0 && arr[j] > key){ 
+            arr[j + 1] = arr[j]; 
+            --j; 
+        } 
+        arr[j + 1] = key; 
+    } 
+    cout<<sira;
+    for (i = 0; i < 15; i++){
+        cout<<ayir;
+        cout<<arr[i];
+    }
+
+}

@@ -1,0 +1,31 @@
+Ödev bisonFiles içerisinde lexer.l ve parser.y den oluþmakta diðer dosyalar bu iki dosyadan
+üretilmektedir. Üretilen parser.tab.c ve lex.yy.c derlendiðinde compiler ortaya çýkmaktadýr.
+Derleme ile bin klasörü içerisinde oluþan compiler.exe
+compiler.exe < derlenecek dosya
+þeklinde çalýþtýrýlabilir.
+örneðin compiler.exe < hepsi.
+Bu þekilde çalýþtýrýlmasý sonucu hem konsol ekranda gösterilir
+hemde bin klasörü içerisinde assembly.asm içerisine sonuçlar kayýt edilir.
+Sonuçlar MARS MIPS simulator içerisinde çalýþtýrýlabilir.
+
+Desteklenen formatlar:
+veri tipleri => integer, char,  integer dizi, char dizi
+(Not char dizi 0. indeksten deðil 1. indeksten baþlatýlýr. Bu þekilde kodladým.)
+main fonksiyonu
+cout
+while döngüsü
+for döngüsü
+if  
+eif - else ( if' den sonra else gelicekse eif komutu þeklinde yazýlmalý)
+Topla çýkar çarp böl mod al and or xor deðil çalýþtýrýlabilir.
+nor nand xnor dolaylý yoldan desteklendi. Örneðin !(a | b)
+<,>,==,!=,<=,>= gibi þartlar desteklendi.
+
+Ödevin istediði tüm þartlar yerine getirilmiþtir. 
+Bonuslardan sadece ek fonksiyon implementasyonu desteklemedi.
+
+Ýspat için bin klasörü içerisinde tüm desteklenen olaylar için ayrý ayrý dosya býrakýlmýþtýr.
+Çýktýyý MARS MIPS simulator' de deneyiniz.
+
+
+

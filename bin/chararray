@@ -1,0 +1,8 @@
+void main(){
+    char karakter[5];
+    karakter[1] = 'm';
+    karakter[2] = 'i';
+    karakter[3] = 'p';
+    karakter[4] = 's'; 
+    cout<<karakter;
+}
